@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="day11.testngexamples.TricentisShoppinhSite"/>
+      <class name="day11.testngexamples.Example8"/>
+      <class name="day11.testngexamples.Example5"/>
+      <class name="day11.testngexamples.Example4"/>
+      <class name="day11.testngexamples.Example7"/>
+      <class name="day11.testngexamples.Example6"/>
+      <class name="day11.testngexamples.Example1"/>
+      <class name="day11.testngexamples.Example3"/>
+      <class name="day11.testngexamples.Example2"/>
+      <class name="day11.testngexamples.NewTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
