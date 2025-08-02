@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day11.testngexamples.TricentisShoppinhSite">
+      <class name="day11.retryfailedTc.Test001">
         <methods>
-          <include name="loginIntoTricentisValidateWithAssert"/>
+          <include name="Test1"/>
+          <include name="Test3"/>
+          <include name="Test2"/>
         </methods>
-      </class> <!-- day11.testngexamples.TricentisShoppinhSite -->
+      </class> <!-- day11.retryfailedTc.Test001 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

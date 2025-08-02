@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Parallel test suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Firefox(failed)">
+    <parameter name="password" value="Test@123"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="username" value="admin"/>
+    <classes>
+      <class name="day11.testngexamples.TricentisShoppinhSite">
+        <methods>
+          <include name="loginPageObjectValidateWithAssert"/>
+        </methods>
+      </class> <!-- day11.testngexamples.TricentisShoppinhSite -->
+      <class name="day11.advancetestng.ParallelExecutionTest">
+        <methods>
+          <include name="testLoginOfVtiger" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- day11.advancetestng.ParallelExecutionTest -->
+    </classes>
+  </test> <!-- Firefox(failed) -->
+  <test thread-count="2" parallel="tests" name="Edge(failed)">
+    <parameter name="password" value="Test@123"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="username" value="admin"/>
+    <classes>
+      <class name="day11.testngexamples.TricentisShoppinhSite">
+        <methods>
+          <include name="loginPageObjectValidateWithAssert"/>
+        </methods>
+      </class> <!-- day11.testngexamples.TricentisShoppinhSite -->
+    </classes>
+  </test> <!-- Edge(failed) -->
+</suite> <!-- Failed suite [Parallel test suite] -->

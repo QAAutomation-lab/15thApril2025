@@ -3,17 +3,17 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="day11.testngexamples.Example8">
-        <methods>
-          <include name="logout"/>
-        </methods>
-      </class> <!-- day11.testngexamples.Example8 -->
       <class name="day11.testngexamples.Example5">
         <methods>
           <include name="deleteLead"/>
           <include name="createLead"/>
         </methods>
       </class> <!-- day11.testngexamples.Example5 -->
+      <class name="day11.testngexamples.Example8">
+        <methods>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- day11.testngexamples.Example8 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -214,4 +214,7 @@ public class SeleniumUtil {
 			e.printStackTrace();
 		}
 	}
+	public WebElement getActiveElementFromUI() {
+		return driver.switchTo().activeElement();
+	}
 }
