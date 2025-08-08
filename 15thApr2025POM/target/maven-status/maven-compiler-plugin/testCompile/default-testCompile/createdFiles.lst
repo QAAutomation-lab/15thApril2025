@@ -1,0 +1,11 @@
+webpages_orangehrm\PersonalDetailsPage.class
+webpages_orangehrm\LoginPage.class
+webpages_orangehrm\AddEmployeePage.class
+webpages_vtiger\VtitgerLoginPage.class
+testscripts_orangehrm\TestPIM.class
+com\google\pages\GoogleSearchedPage.class
+com\google\pages\GoogleHomePage.class
+com\google\testscripts\GoogeTest.class
+webpages_orangehrm\PimHomePage.class
+testscripts_vtiger\ValidateLeads.class
+webpages_orangehrm\HomePage.class
