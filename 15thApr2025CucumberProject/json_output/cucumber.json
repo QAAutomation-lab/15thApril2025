@@ -1,0 +1,141 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2025-08-10T11:33:30.766Z",
+        "line": 4,
+        "name": "Validate suggestion count in google search",
+        "description": "",
+        "id": "testing-google-search-functionality;validate-suggestion-count-in-google-search",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4810313000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Browser is already opened with valid url",
+            "match": {
+              "location": "stepdef.GoogleSearchDef.browser_is_already_opened_with_valid_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1587147000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user types \"Selenium\" in search input field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Selenium\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdef.GoogleSearchDef.user_types_in_search_input_field(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 193177900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should get \"10\" suggestions",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepdef.GoogleSearchDef.user_should_get_suggestions(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-08-10T11:33:37.483Z",
+        "line": 10,
+        "name": "Validate suggestion selection in google",
+        "description": "",
+        "id": "testing-google-search-functionality;validate-suggestion-selection-in-google",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 818531900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user selects \"selenium interview questions\" from suggestion",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"selenium interview questions\"",
+                  "offset": 13
+                }
+              ],
+              "location": "stepdef.GoogleSearchDef.user_selects_from_suggestion(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found\n  (Session info: chrome\u003d138.0.7204.169)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception\nBuild info: version: \u00274.16.1\u0027, revision: \u00279b4c83354e\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.3\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [994daf27b27347329fd8ddea29cc38df, isElementDisplayed {id\u003df.A4AB23D98B58D4518306B9B8BFEB22D2.d.D384409C09C297EDDF60BA77571C41AD.e.33}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\\Users\\Asus\\AppData\\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56753}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56753/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on windows (994daf27b27347329fd8ddea29cc38df)] -\u003e name: q]\nSession ID: 994daf27b27347329fd8ddea29cc38df\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:283)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)\r\n\tat utilities.SeleniumUtility.waitForElementDisplayed(SeleniumUtility.java:250)\r\n\tat utilities.SeleniumUtility.getTextFromElement(SeleniumUtility.java:78)\r\n\tat stepdef.GoogleSearchDef.user_should_be_able_to_see_in_search_input_field_of_next_page(GoogleSearchDef.java:50)\r\n\tat ✽.user should be able to see \"selenium interview questions\" in search input field of next page(file:///F:/Workplaces/SeleniumBDD_Workspace/15thApr2025CucumberProject/src/test/resources/features/GoogleSearch.feature:12)\r\n",
+              "duration": 19889414600,
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "user should be able to see \"selenium interview questions\" in search input field of next page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"selenium interview questions\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdef.GoogleSearchDef.user_should_be_able_to_see_in_search_input_field_of_next_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "close the browser",
+            "match": {
+              "location": "stepdef.GoogleSearchDef.close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Testing Google search functionality",
+    "description": "",
+    "id": "testing-google-search-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/GoogleSearch.feature",
+    "tags": []
+  }
+]
