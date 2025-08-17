@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-16T08:19:59 IST" name="Default suite" finished-at="2025-08-16T08:19:59 IST" duration-ms="109">
+  <suite started-at="2025-08-17T08:24:38 IST" name="Default suite" finished-at="2025-08-17T08:24:43 IST" duration-ms="4487">
     <groups>
     </groups>
-    <test started-at="2025-08-16T08:19:59 IST" name="Default test" finished-at="2025-08-16T08:19:59 IST" duration-ms="109">
-      <class name="day1.apisession1.Example4">
-        <test-method signature="jsonReaders()[pri:0, instance:day1.apisession1.Example4@1fb700ee]" started-at="2025-08-16T08:19:59 IST" name="jsonReaders" finished-at="2025-08-16T08:19:59 IST" duration-ms="32" status="PASS">
+    <test started-at="2025-08-17T08:24:38 IST" name="Default test" finished-at="2025-08-17T08:24:43 IST" duration-ms="4487">
+      <class name="day2.jsonAndSerializationPojo.Example5">
+        <test-method signature="updateUserDetails()[pri:0, instance:day2.jsonAndSerializationPojo.Example5@1fb700ee]" started-at="2025-08-17T08:24:38 IST" name="updateUserDetails" finished-at="2025-08-17T08:24:43 IST" duration-ms="4405" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- jsonReaders -->
-      </class> <!-- day1.apisession1.Example4 -->
+        </test-method> <!-- updateUserDetails -->
+      </class> <!-- day2.jsonAndSerializationPojo.Example5 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
